@@ -1,0 +1,46 @@
+{
+  "name": "smartsender",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "start-server-and-test dev http://localhost:5173 cy:run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "antd": "^5.29.3",
+    "axios": "^1.20.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.6.1",
+    "cypress": "^15.21.1",
+    "msw": "^2.15.0",
+    "oxlint": "^1.81.0",
+    "postcss": "^8.5.29",
+    "start-server-and-test": "^2.1.5",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
